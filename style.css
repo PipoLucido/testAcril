@@ -204,6 +204,7 @@ grid-area: img1;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+	z-index: 150;
 }
 
 .imgGaleriaMuestrabig{
@@ -212,6 +213,7 @@ grid-area: img1;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+	z-index: 150;
 }
 
 .imgGaleriaMuestra:hover {

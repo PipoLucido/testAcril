@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb{
 .wpp{
     position: fixed;
     width: 100px;
-    top: 50%;
+    top: 70%;
     left: 15px;
     cursor: pointer;
     z-index: 999999999;
@@ -28,15 +28,16 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     height: 100%;
     background-image: url('./img/fondoHome.jpg');
+    filter: grayscale(90%);
     background-position-y: -90px;
 }
 
 #header{
-    width: 98%;
+    width: 100%;
    padding-left: 15px;
     padding-top: 15px;
     display: grid;
-	
+	font-family: 'Roboto', sans-serif;
 	grid-template-columns: 1fr 1fr 1fr 8fr;
     grid-template-rows: minmax(50px, auto) ;
 }
@@ -74,7 +75,7 @@ body::-webkit-scrollbar-thumb{
     margin-right: 25px;
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
-   /* background-color: rgb(132, 209, 132);*/
+    /*background-color: rgb(132, 209, 132);*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -93,6 +94,7 @@ body::-webkit-scrollbar-thumb{
     height: 520px;
    color: white;
    font-family: 'Fjalla One', sans-serif;
+   /*font-family: 'Roboto', sans-serif;*/
     padding-top: 15px;
     display: grid;
 	grid-template-columns: 1fr ;
@@ -118,6 +120,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -143,7 +146,9 @@ grid-area: img1;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.158);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.16);
+    
+    z-index: 50;
 }
 .img2{
     padding: 5px;
@@ -154,7 +159,7 @@ grid-area: img1;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.158);
+    z-index: 40;
 }
 .img3{
     padding: 5px;
@@ -165,7 +170,8 @@ grid-area: img1;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.336);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 160;
 }
 .img4{
     padding: 5px;
@@ -176,7 +182,7 @@ grid-area: img1;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.158);
+    
 }
 .img5{
     padding: 5px;
@@ -187,12 +193,21 @@ grid-area: img1;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.158);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 50;
    
 }
 
 .imgGaleriaMuestra{
     width: 150px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgGaleriaMuestrabig{
+    width: 450px;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -224,7 +239,7 @@ grid-area: img1;
 }
 
 .titleContact{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -279,6 +294,7 @@ grid-area: img1;
 
 .btn{
     width: 150px;
+    font-size: 45px;
 }
 
 
@@ -292,6 +308,7 @@ grid-area: img1;
 
 .footer{
     color: white;
+    font-family: 'Roboto', sans-serif;
     background-color: black;
     text-align: center;
 }

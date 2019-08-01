@@ -15,7 +15,7 @@ body::-webkit-scrollbar-thumb {
 
 .wpp {
     position: fixed;
-    width: 100px;
+    width: 70px;
     top: 70%;
     left: 15px;
     cursor: pointer;
